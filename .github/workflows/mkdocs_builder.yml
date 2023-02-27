@@ -20,6 +20,6 @@ jobs:
           path: .cache
       - run: pip install \ 
               mkdocs-material \
-              mkdocs new . \
+              pillow cairosvg \
               mkdocs build 
       - run: mkdocs gh-deploy --force
