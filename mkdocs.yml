@@ -1,0 +1,59 @@
+site_name: Builderman - Ravenhub Docs
+theme:
+  name: material
+  language: en
+  logo: assets/rh-logo.png
+  favicon: assets/rh-logo.png
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Dark Mode
+        primary: deep purple
+        accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Light Mode
+        primary: deep purple
+        accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+plugins: 
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - social:
+      cards_font: Roboto
+      card_color:
+        fill: '#5e2cfc'
+        text: '#000000'
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Ravenhub Analytics
+        checked: true
+    actions:
+      - accept
+      - manage 
+      - reject
